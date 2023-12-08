@@ -1,0 +1,24 @@
+.root-layout{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+.root-layout-navlist{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+.root-layout-navlist{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  background-color: var(--color-backdrop);
+  z-index: 100;
+  border-radius: 50px;
+  backdrop-filter:blur(20px) saturate(1.7);
+}
+.outlet{
+    grid-row: 1/2;
+    height: fit-content;
+}
