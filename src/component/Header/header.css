@@ -6,15 +6,37 @@
   text-align: center;
   align-items: center;
   /* background-color: aqua; */
-  background: rgb(39, 174, 112);
-  background: linear-gradient(
+  /* background: rgb(39, 174, 112); */
+ 
+  background:linear-gradient(
     180deg,
     rgba(39, 174, 112, 1) 0%,
     rgba(40, 149, 93, 1) 0%,
     rgba(35, 56, 49, 1) 82%,
     rgba(35, 56, 49, 1) 100%
   );
+ 
+  
+animation: gradientChange 3s ease-in-out infinite;
+
 }
+/* Define the base gradient */
+
+/* Define the animation keyframes */
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Apply the animation to the element */
+
 .name {
   display: flex;
   flex-direction: column;

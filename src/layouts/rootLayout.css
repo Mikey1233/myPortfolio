@@ -5,14 +5,15 @@
 .root-layout-navlist{
     display: flex;
     list-style-type: none;
-    gap: 2rem;
+    gap: 0.7rem;
 }
 .root-layout-navlist{
     position: fixed;
+
     top: 10%;
     left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: var(--color-backdrop);
   z-index: 100;
   border-radius: 50px;
