@@ -32,10 +32,11 @@
     background-color: hsla(0, 0%, 100%, 1);
     border-radius: 60px;
     padding: 20px 30px;
+    overflow: hidden;
     position: relative;
 }
 .box-1-content,.box-2-content{
-    text-align: right;
+    text-align: right
 }
 .box-1-content small{
     text-transform: uppercase;
@@ -52,7 +53,7 @@
 .box-1 img{
     position: absolute;
     width: 60%;
-    top: 30%;
+    top: 35%;
     left: 20%;
     transition: all .4s;
     cursor: pointer;
@@ -66,13 +67,13 @@ transform: translateY(10px);
     border-radius: 60px;
     padding: 20px 30px;
     position: relative;
-    z-index: 100;
+    /* z-index: 100; */
     overflow: hidden;
 }
 .box-2 img{
     position: absolute;
     width: 45%;
-    top: 30%;
+    top: 35%;
     left: 28%;
     transition: all .4s;
     cursor: pointer;
@@ -92,4 +93,30 @@ transform: translateY(10px);
     color: white;
     font-weight: 700;
     font-family: 'acorn',sans-serif;
+}
+
+@media screen and (max-width:700px){
+    .progress{
+        padding:  2rem ;
+        /* margin-top: 2rem; */
+    }
+    .progress-title h3{
+        
+        font-size: 60px;
+        letter-spacing: 1px;
+        line-height: 100%;
+        margin-bottom: 3.5rem;
+    }
+    .progress-title p{
+        font-size: 24px;
+        line-height: 100%;
+        padding: unset;
+        /* max-width: 300px; */
+    }
+    .progress-content{
+        grid-template-columns:1fr;
+            grid-template-rows: 50% 50%;
+        gap: 2rem;
+        height: 80vh;
+    }
 }

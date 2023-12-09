@@ -1,50 +1,74 @@
-.gallery-stack{
-    padding:  4rem 5rem;
-    margin-top: 2rem;
+.gallery-stack {
+  padding: 4rem 5rem;
+  margin-top: 2rem;
 }
-.gallery-stack-title{
-    text-align: right;
+.gallery-stack-title {
+  text-align: right;
 }
-.gallery-stack-title h3{
-    color: var(--color-text-h);
-    font-family: 'acorn',sans-serif;
-    font-size: 72px;
-    letter-spacing: -1px;
-    line-height: 24px;
-    margin-bottom: 3rem;
+.gallery-stack-title h3 {
+  color: var(--color-text-h);
+  font-family: "acorn", sans-serif;
+  font-size: 72px;
+  letter-spacing: -1px;
+  line-height: 24px;
+  margin-bottom: 3rem;
 }
 .gallery-stack-content {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
-.stack-content{
-    padding: 4rem 2rem ;
-    border-top: 1px solid var(--color-text-h);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+.stack-content {
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--color-text-h);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
-.content{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    /* max-width: 350px; */
+.content {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* max-width: 350px; */
 }
-.title h4{
-    font-size: 35px;
-    font-family: 'acorn',sans-serif;
+.title h4 {
+  font-size: 35px;
+  font-family: "acorn", sans-serif;
+  line-height: 100%;
+  color: var(--color-text-h);
+}
+.content p {
+  font-size: 16px;
+  font-family: "gt", sans-serif;
+  line-height: 27px;
+  display: flex;
+  gap: 2px;
+  /* flex-wrap: wrap; */
+  color: var(--color-text-p);
+}
+.content p img {
+  width: 1.8rem;
+}
+@media screen and (max-width: 700px) {
+  .gallery-stack {
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+  }
+  .gallery-stack-title h3 {
+    font-size: 60px;
+    letter-spacing: 1px;
     line-height: 100%;
-    color: var(--color-text-h);
-}
-.content p{
-    font-size: 16px;
-    font-family: 'gt',sans-serif;
-    line-height: 27px;
-    display: flex;
-    gap: 2px;
-    /* flex-wrap: wrap; */
-    color: var(--color-text-p);
-}
-.content p img{
-    width: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .stack-content {
+    padding: 4rem 1rem;
+  }
+  .content p{
+    font-size: 18px;
+  }
+  .title h4{
+    font-size: 40px;
+  }
+  .content p img {
+    width: 1.95rem;
+  }
 }

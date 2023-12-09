@@ -27,20 +27,20 @@ function Stack({
           <img src={img1} alt="logo" />
         </p>
         <p>
-          <span>, {two} </span>
+          <span> • {two} </span>
           <img src={img2} alt="logo" />
         </p>
         <p>
-          <span>, {three} </span>
+          <span> • {three} </span>
           <img src={img3} alt="logo" />
         </p>
         <p>
-          <span>, {four} </span>
+          <span> • {four} </span>
           <img src={img4} alt="logo" />
         </p>
         {cond && (
           <p>
-            <span>, {five} </span>
+            <span> • {five} </span>
             <img src={img5} alt="logo" />
           </p>
         )}

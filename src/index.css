@@ -10,6 +10,10 @@
   src: url('acorn/Acorn-Bold.otf');
 }
 @font-face {
+  font-family: "acorn-light";
+  src: url('acorn/Acorn-Medium.otf');
+}
+@font-face {
   font-family: "gt";
   src: url('acorn/FontsFree-Net-GT-America-Regular-1.ttf');
 }

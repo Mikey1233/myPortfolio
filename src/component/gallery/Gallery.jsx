@@ -21,22 +21,8 @@ import res from "../../Assets/responsive.svg";
 
 
 function Gallery() {
-  const stackData = [
-    {
-      title: "Languages",
-      // data: `JavaScript(ES6+) ${<img src={jv}/>}, HTML 5, CSS 3, TAILWINDCSS.`,
-    },
-    {
-      title: "Frameworks & Tools",
-      // data: "GitHub, Vercel, Firebase, Reactjs, Vite",
-    },
-    {
-      title: "Others",
-      //   data: `Version Control Systems ,
-      //   Responsive Web Design, Communication, Collaboration,
-      //  Critical Thinking, Adaptablity`,
-    },
-  ];
+ 
+  
   return (
     <div className="gallery-stack">
       <div className="gallery-stack-title">
