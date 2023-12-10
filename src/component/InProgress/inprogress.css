@@ -108,7 +108,7 @@ transform: translateY(10px);
         margin-bottom: 3.5rem;
     }
     .progress-title p{
-        font-size: 24px;
+        font-size: 22px;
         line-height: 100%;
         padding: unset;
         /* max-width: 300px; */
@@ -118,5 +118,8 @@ transform: translateY(10px);
             grid-template-rows: 50% 50%;
         gap: 2rem;
         height: 80vh;
+    }
+    .box-1,.box-2{
+        border-radius: 30px;
     }
 }
