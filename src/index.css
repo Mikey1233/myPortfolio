@@ -14,6 +14,10 @@
   src: url('acorn/Acorn-Medium.otf');
 }
 @font-face {
+  font-family: 'acorn-lighter';
+  src: url('acorn/Acorn-Light.otf');
+}
+@font-face {
   font-family: "gt";
   src: url('acorn/FontsFree-Net-GT-America-Regular-1.ttf');
 }
