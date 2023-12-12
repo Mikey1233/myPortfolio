@@ -32,6 +32,10 @@ border-radius: 60px;
     color: #d4ede4;
     font-size: 13px;
     font-family: 'gt',sans-serif;
+    margin-bottom: 5px;
+}
+.copy p a {
+    padding: 0;
 }
 .footer-spotify img{
     width: 12%;

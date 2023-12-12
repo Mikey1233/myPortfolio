@@ -19,8 +19,7 @@ function Header() {
 
         <div className="home-text">
           <p>
-            I'm passionate about crafting experiences that are engaging,
-            accessible, and user-centric.
+          Creating interesting, approachable, and user-focused experiences is what I'm passionate about.
           </p>
         </div>
       </div>
