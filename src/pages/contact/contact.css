@@ -1,0 +1,112 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-page-box {
+  padding: 10rem 1rem 0rem 1rem;
+
+  background: linear-gradient(
+    180deg,
+    rgba(39, 174, 112, 1) 0%,
+    rgba(40, 149, 93, 1) 0%,
+    rgba(35, 56, 49, 1) 82%,
+    rgba(35, 56, 49, 1) 100%
+  );
+}
+.contact-page-box h2 {
+  color: var(--color-text-h);
+  font-family: "acorn", sans-serif;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 72px;
+}
+.contact-page-content-bar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+.contact-page-content-bar  button ,
+.contact-page-content form button {
+  /* width: 220px; */
+  padding: 16px 3rem;
+  border-radius: 30px;
+  border: 0;
+  background-color: var(--color-text-h);
+  cursor: pointer;
+}
+.contact-page-content-bar button a{
+  color: #203120;
+    font-size: 1.2rem;
+}
+.contact-page-content form {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem 15rem;
+}
+.contact-page-content input {
+  color: white;
+    font-family: 'acorn-lighter',sans-serif;
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 30px;
+  border: 0;
+  background-color: hsla(160, 52%, 71%, 0.1);
+}
+.contact-page-content textarea{
+    border: 0;
+    outline: none;
+  color: white;
+padding: 10px;
+    border-radius: 10px;
+    font-family: 'acorn-lighter',sans-serif;
+  background-color: hsla(160, 52%, 71%, 0.1);
+
+}
+textarea::placeholder{
+    color: rgb(185, 179, 179);
+    padding-left: 10px;
+}
+.contact-page-content form button {
+  color: white;
+  width: 220px;
+  place-self: center;
+  /* background-color: #00000078; */
+  background-color: hsla(160, 52%, 71%, 0.1);
+
+}
+input::placeholder {
+  color: #fff;
+  /* font-style: italic; */
+}
+/* responsiveness */
+@media screen and (max-width:700px) {
+    .contact-page-box h2 {
+      
+        font-size: 60px;
+      }   
+      .contact-page-content-bar {
+        
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .contact-page-content form {
+        gap: 1rem;
+        padding: 1rem ;
+    }
+    .contact-page-box {
+        padding: 7rem 1rem 0rem 1rem;
+    }
+    .contact-page-content textarea{
+      
+    padding: 10px 0 0 10px;
+      
+    
+    }
+}

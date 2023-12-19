@@ -217,10 +217,10 @@ p.active {
   );
   background-color: #161b22;
   border: 1px solid #becce439;
-  /* background-color: #7cc3ab; */
+  height: fit-content;
   border-radius: 10px;
   width: 100%;
-  height: 100%;
+  height:fit-content;
   padding: 10px;
 }
 .githubLogo {
@@ -255,7 +255,7 @@ p.active {
   border-radius: 50%;
   /* object-fit: contain; */
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 960px) {
   .about-intro {
     padding: 7rem 1rem 0rem 1rem;
   }
@@ -338,4 +338,5 @@ p.active {
     height: 100%;
     position: relative;
 }
+.github-details{height: fit-content;}
 }

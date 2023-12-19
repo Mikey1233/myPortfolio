@@ -36,7 +36,10 @@
     position: relative;
 }
 .box-1-content,.box-2-content{
-    text-align: right
+    text-align: right;
+    position: relative;
+    z-index: 100;
+    
 }
 .box-1-content small{
     text-transform: uppercase;

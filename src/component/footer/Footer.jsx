@@ -26,7 +26,7 @@ function Footer() {
         </div>
         <div className="copy">
           <p> © 2023 Michael Emmanuel • Lagos, Nigeria</p>
-          <p><a href="https://www.linkedin.com/in/seanehalpin/" target="blank">Design inspired by • Seán Halpin • product designer</a></p>
+         
         </div>
       </div>
       <div className="footer-links">
@@ -48,7 +48,7 @@ function Footer() {
                 href="https://twitter.com/MikeyCodes123"
                 target="blank"
               >
-                twitter
+              X
               </a>
             </li>
             <li>

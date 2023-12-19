@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import gitHub from "../../Assets/github2.png";
 import gitLogo from "../../Assets/profile2.jpg";
 
-
 const GithubComp = ({ username }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState({});
@@ -24,7 +23,6 @@ const GithubComp = ({ username }) => {
         if (response.ok) {
           const data = await response.json();
           setUser(data);
-          console.log(data)
 
           setIsLoading(false);
         } else {
@@ -69,11 +67,7 @@ const GithubComp = ({ username }) => {
       {!isLoading && (
         <a href="https://github.com/Mikey1233" target="blank">
           <aside>
-            <img
-              className="githubLogo2"
-              src={gitLogo}
-              alt={user.name}
-            />
+            <img className="githubLogo2" src={gitLogo} alt={user.name} />
             <img src={gitHub} alt="github logo" className="githubLogo" />
           </aside>
 

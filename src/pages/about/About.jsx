@@ -78,7 +78,7 @@ function About() {
           </div>
           <div className="about-intro-text">
             <h4>
-              I'm a Frontend developer doing freelancing from 34°C Lagos,
+              I'm a Frontend developer and freelancer, from 34°C Lagos 
               Nigeria.
             </h4>
             <p>
