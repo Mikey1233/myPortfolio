@@ -11,6 +11,8 @@ max-width: 350px;
 gap: 12px;
 background-color: hsla(160, 52%, 71%, .1);;
 padding: 7px 15px;
+border: 1px solid hsla(0, 0%, 100%, .2);
+cursor: pointer;
 align-items: center;
 margin-bottom: 2rem;
 border-radius: 60px;

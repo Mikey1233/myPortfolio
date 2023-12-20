@@ -54,7 +54,7 @@ function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-page-box">
-        <h2>GET IN TOUCH</h2>
+        <h3>GET IN TOUCH</h3>
         <div className="contact-page-content">
           <div className="contact-page-content-bar">
             <button type="button">
