@@ -95,7 +95,7 @@ function Contact() {
             />
             <textarea
               placeholder="Hi Michael,I have an idea which needs your expertise...."
-              rows={"10"}
+              rows={"15"}
               cols={"50"}
               name="message"
               onChange={handleChange}

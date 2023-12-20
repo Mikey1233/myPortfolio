@@ -14,6 +14,12 @@
     rgba(35, 56, 49, 1) 100%
   );
 }
+.contact-page-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .contact-page-box h2 {
   color: var(--color-text-h);
   font-family: "acorn", sans-serif;
@@ -48,7 +54,8 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 1rem 15rem;
+  padding: 1rem;
+  width: 50vw;
 }
 .contact-page-content input {
   color: white;
@@ -92,13 +99,14 @@ input::placeholder {
         font-size: 60px;
       }   
       .contact-page-content-bar {
-        
+        padding: 2rem 5px;
         flex-direction: column;
         gap: 1rem;
       }
       .contact-page-content form {
         gap: 1rem;
-        padding: 1rem ;
+        padding: 15px;
+        width: 100%;
     }
     .contact-page-box {
         padding: 7rem 1rem 0rem 1rem;
