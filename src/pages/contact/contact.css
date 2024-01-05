@@ -99,7 +99,8 @@ textarea {
   transition: all .4s;
 }
 .contact-page-content form button:hover{
-  transform: scale(1.1);
+  transform: scale(1.1
+  );
 }
 input::placeholder {
   color: #fff;

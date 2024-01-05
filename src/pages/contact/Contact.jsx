@@ -72,7 +72,7 @@ function Contact() {
             </button>
             <button type="button">
               <a
-                href="https://www.linkedin.com/in/emmanuel-michael-b82106260/"
+                href="https://github.com/Mikey1233"
                 target="blank"
               >
                 GITHUB
