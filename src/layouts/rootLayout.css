@@ -20,6 +20,7 @@
 .blur{
     background-color: var(--color-backdrop);
     backdrop-filter:blur(20px) saturate(1.7);
+    -webkit-backdrop-filter:blur(20px) saturate(1.7) ;
     
 }
 .outlet{
