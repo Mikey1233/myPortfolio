@@ -14,12 +14,13 @@
     left: 50%;
   transform: translate(-50%, -50%);
   padding: 0.5rem 1rem;
-  z-index: 100;
+  z-index: 1000000;
   border-radius: 50px;
 }
 .blur{
     background-color: var(--color-backdrop);
     backdrop-filter:blur(20px) saturate(1.7);
+    
 }
 .outlet{
     grid-row: 1/2;
