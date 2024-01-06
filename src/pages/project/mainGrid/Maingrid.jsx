@@ -1,16 +1,19 @@
 import React from 'react'
 import './maingrid.css'
-function Maingrid({title,text,pic}) {
+function Maingrid({title,text,pic,site,check}) {
   return (
-    <div className='main-box'>
+    <a style={{padding:0,margin:0,fontSize:'unset'}} href={site} target='blank'>
+<div className='main-box'>
       <div className='main-box-text'>
-             <p>{title}</p>
+             <p>{title}{check?<span className='pro' style={{color:'gray'}}>inProgress</span>:''}</p>
              <span>{text}</span>
       </div>
       <div className='main-box-img'>
         <img src={pic} alt='project-pic'/>
       </div>
     </div>
+    </a>
+    
   )
 }
 

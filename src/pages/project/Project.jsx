@@ -42,11 +42,13 @@ function Project() {
               text={"track and checkout your workouts with mappy"}
               title={"mappy"}
               pic={map}
+              site={'https://mapty-app-nu.vercel.app/'}
             />
             <Minorgrid
               text={"online banking-simulation made specially for kids👱‍♂️"}
               title={"Bank for Kids"}
               pic={bank}
+              site={'https://u-ibanking.vercel.app/'}
             />
             <Maingrid
               text={
@@ -54,6 +56,7 @@ function Project() {
               }
               title={"Movie box"}
               pic={movie}
+              site={'https://movie-box-mikey1233.vercel.app/'}
             />
           </div>
           <div className="project-grids2">
@@ -63,6 +66,7 @@ function Project() {
               text={
                 "a modern UI/UX design I made with the inspiration gotten from Hotdrop"
               }
+              site={'https://hotdrop-lp.vercel.app/'}
             />
             <Minorgrid
               title={"Le Quiz"}
@@ -71,12 +75,14 @@ function Project() {
               }
               pic={quiz}
             />
-            <Minorgrid title={'todo-List'} text={" create and add all your simple task to todo_list app..."} pic={todo}/>
+            <Minorgrid title={'todo-List'} text={" create and add all your simple task to todo_list app..."}
+            site={'https://my-todo-app-black.vercel.app/'}
+            pic={todo}/>
           </div>
           <div className="project-grids3">
-            <Minorgrid title={'box-drive'} pic={box} text={'upload and add docs to box-drive online cloud platform'}/>
-            <Maingrid title={'Milton Admin dashboard'} pic={miltron} text={'Unleash the potential of Milton. Access and command with the intuitive admin dashboard.'}/>
-            <Minorgrid title={'weather&Me'} pic={weather} text={'check out the weathers of different cities in weather & me'}/>
+            <Minorgrid check={true} title={'box-drive'} pic={box} text={'upload and add docs to box-drive online cloud platform'}/>
+            <Maingrid check={true} title={'Milton Admin dashboard'} pic={miltron} text={'Unleash the potential of Milton. Access and command with the intuitive admin dashboard.'}/>
+            <Minorgrid check={true} title={'weather&Me'} pic={weather} text={'check out the weathers of different cities in weather & me'}/>
 
           </div>
         </div>
@@ -86,4 +92,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Project

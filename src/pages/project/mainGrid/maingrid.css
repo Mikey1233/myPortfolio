@@ -24,8 +24,15 @@
 .main-box-text p{
     font-size: 18px;
     font-weight: 600;
+    white-space: nowrap;
     color: var(--color-text-h);
     font-family: 'acorn-lighter',sans-serif;
+}
+.pro{
+    background-color: var(--color-text-h);
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 .main-box-text span{
     font-size: 14px;
@@ -38,6 +45,7 @@
     height: 100%;
     object-fit: contain;
 }
+
 @media screen and (max-width: 700px) {
     .main-box{
         padding: 2rem;

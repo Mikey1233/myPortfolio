@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .project {
   display: flex;
   flex-direction: column;
@@ -61,21 +62,26 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
-.project-grids1,
-.project-grids2,
-.project-grids3 {
-  width: 100%;
-  gap: 15px;
-  display: grid;
-}
+
 .project-grids1 {
-  grid-template-rows: 150px 150px 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
 }
+
 .project-grids2 {
-  grid-template-rows: 1fr 150px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
 }
 .project-grids3 {
-  grid-template-rows: 150px 1fr 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
 }
 @media screen and (max-width: 700px) {
   .project {
