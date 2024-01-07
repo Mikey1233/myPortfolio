@@ -74,6 +74,7 @@ function Project() {
                 " feeling bored..😶,try le quiz.Answer all questions correctly to win"
               }
               pic={quiz}
+              site={'https://quiz-game-pi-rust.vercel.app/'}
             />
             <Minorgrid title={'todo-List'} text={" create and add all your simple task to todo_list app..."}
             site={'https://my-todo-app-black.vercel.app/'}
