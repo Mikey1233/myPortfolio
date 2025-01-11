@@ -1,12 +1,17 @@
 import React from "react";
 import "./about.css";
 import Footer from "../../component/footer/Footer";
-import emma from "../../Assets/emmanuel.jpg";
+import emma from "../../Assets/emma.png";
 import lagos from "../../Assets/lagos3.jpg";
 import sportIcon from "../../Assets/spotify.svg";
 import { useState } from "react";
 import GithubComp from "../../component/githubComp/GithubComp";
-
+import SplitWord from "./SplitWord";
+// import  { useEffect } from "react";
+import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import SplitType from "split-type";
+import "./SplitWord.css";
 const dataContent = [
   {
     num: "01",
@@ -41,16 +46,106 @@ const dataContent = [
   },
 ];
 
-const Board = ({ num, title, content }) => {
+const Board = ({ num, title, content,c }) => {
   return (
     <div className="about-board-content">
       <span>{num}</span>
       <h2>{title}</h2>
-      <p>{content}</p>
+      <p className={c}>{content}</p>
     </div>
   );
 };
 function About() {
+  // useEffect(() => {
+  //   let typeSplit;
+
+  //   // Split the text into words and lines
+  //   const runSplit = () => {
+  //     typeSplit = new SplitType(".split-word", {
+  //       types: "lines, words",
+  //     });
+
+  //     createAnimation();
+  //   };
+
+  //   const createAnimation = () => {
+  //     const words = document.querySelectorAll(".word");
+
+  //     gsap.registerPlugin(ScrollTrigger);
+
+  //     const tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".split-word",
+  //         start: "top center",
+  //         end: "bottom center",
+  //         scrub: 1,
+  //       },
+  //     });
+
+  //     tl.to(words, {
+  //       color: "#d4ede4", // Change this to your desired text color
+  //       duration: 1,
+  //       stagger: 0.5,
+  //     });
+  //   };
+
+  //   runSplit();
+
+  //   // Cleanup on unmount
+  //   return () => {
+  //     if (typeSplit) typeSplit.revert();
+  //     ScrollTrigger.killAll();
+  //   };
+  // }, []);
+//  useEffect(() => {
+//     let typeSplit;
+
+//     // Split the text into words and lines
+//     const runSplit = () => {
+//       typeSplit = new SplitType(".split-word", {
+//         types: "lines, words",
+//       });
+
+//       const words = document.querySelectorAll(".word");
+//       words.forEach((word) => {
+//         const mask = document.createElement("div");
+//         mask.classList.add("line-mask");
+//         word.appendChild(mask);
+//       });
+
+//       createAnimation();
+//     };
+
+//     const createAnimation = () => {
+//       const allMasks = Array.from(document.querySelectorAll(".line-mask"));
+
+//       gsap.registerPlugin(ScrollTrigger);
+
+//       const tl = gsap.timeline({
+//         scrollTrigger: {
+//           trigger: ".split-word",
+//           start: "top center",
+//           end: "bottom center",
+//           scrub: 1,
+//         },
+//       });
+
+//       tl.to(allMasks, {
+//         // width: "0%",
+//         color : "white",
+//         duration: 1,
+//         stagger: 0.5,
+//       });
+//     };
+
+//     runSplit();
+
+//     // Cleanup on unmount
+//     return () => {
+//       if (typeSplit) typeSplit.revert();
+//       ScrollTrigger.killAll()
+//     };
+//   }, []);
   const [center, setCenter] = useState({ lat: 6.453061, lng: 3.395833 }); //[, ]
 
   const [anime, setAnime] = useState(false);
@@ -58,7 +153,7 @@ function About() {
     <div className="about">
       <div className="about-intro">
         <div className="about-intro-title">
-          <h3>I'm Micháel.</h3>
+          <h3 >I'm Micháel.</h3>
         </div>
         <div className="about-intro-content">
           <div className="about-intro-img">
@@ -76,12 +171,12 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="about-intro-text">
-            <h4>
+          <div className="about-intro-text ">
+            <h4 className="split-word">
               I'm a Frontend developer and freelancer, from 34°C Lagos 
               Nigeria.
             </h4>
-            <p>
+            <p className="split-word">
               Over the past years, I've worked in various areas of the tech
               space, including front-end development, email, UI/UX, and
               blogging. I'm passionate about providing solutions to users and
@@ -94,7 +189,7 @@ function About() {
       <div className="about-collab">
         <div className="about-collab-content">
           <h3>My Guiding Principles</h3>
-          <p>
+          <p className="split-word">
             I combine the freedom of personality, diligence and integrity to
             design accessible and usable products. Striving daily to offer the
             best digital design solutions to users and organizations. I
@@ -104,27 +199,27 @@ function About() {
         </div>
       </div>
 
-      <div className="about-board">
+      <div className="about-board" >
         {dataContent.map((arr) => (
-          <Board title={arr.title} num={arr.num} content={arr.content} />
+          <Board title={arr.title} num={arr.num} content={arr.content} c={"split-word"}/>
         ))}
       </div>
 
-      <div className="about-me">
+      <div className="about-me" style={{position:"relative"}}>
         <div className="about-me-content">
-          <p>
+          <p className="split-word">
             I started off as a web developer writing emails before there were
             email linters. It was a moment of crossed fingers and fervent
             prayers, hoping your invention would arrive at its target intact.
           </p>
-          <p>
+          <p className="split-word">
             I developed a thorough understanding of HTML and CSS from this
             practical experience, which I have carefully maintained. My current
             side initiatives stem from my intense interest about the newest
             technology and the constantly changing internet, not from mere
             hobbies.
           </p>
-          <p>
+          <p className="split-word">
             When I'm not making, I can be found enjoying playing football
             outside my house, listening to music, exploring the tech world with
             my friends, or hanging around with my little brother, Marvel.
@@ -153,6 +248,11 @@ function About() {
              </div>
         </div>
       </div>
+      <SplitWord selector=".about-intro-text .split-word" />
+
+      <SplitWord selector=".about-collab-content .split-word" />
+      <SplitWord selector=".about-board-content .split-word" />
+      <SplitWord selector=".about-me-content .split-word" />
       <Footer/>
     </div>
   );

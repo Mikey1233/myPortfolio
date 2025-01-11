@@ -1,0 +1,22 @@
+/* .word {
+    position: relative;
+
+  } */
+  .word {
+  position: relative;
+  color: #0d0d0d; /* Initial text color */
+  transition: color 0.3s ease; /* Optional: smooth color transition */
+}
+
+  .line-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: #0d0d0d; */
+    color: #0d0d0d ;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  
