@@ -8,7 +8,7 @@ import { useState } from "react";
 import GithubComp from "../../component/githubComp/GithubComp";
 import SplitWord from "./SplitWord";
 // import  { useEffect } from "react";
-import gsap from "gsap";
+// import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import SplitType from "split-type";
 import "./SplitWord.css";
@@ -56,97 +56,7 @@ const Board = ({ num, title, content,c }) => {
   );
 };
 function About() {
-  // useEffect(() => {
-  //   let typeSplit;
-
-  //   // Split the text into words and lines
-  //   const runSplit = () => {
-  //     typeSplit = new SplitType(".split-word", {
-  //       types: "lines, words",
-  //     });
-
-  //     createAnimation();
-  //   };
-
-  //   const createAnimation = () => {
-  //     const words = document.querySelectorAll(".word");
-
-  //     gsap.registerPlugin(ScrollTrigger);
-
-  //     const tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".split-word",
-  //         start: "top center",
-  //         end: "bottom center",
-  //         scrub: 1,
-  //       },
-  //     });
-
-  //     tl.to(words, {
-  //       color: "#d4ede4", // Change this to your desired text color
-  //       duration: 1,
-  //       stagger: 0.5,
-  //     });
-  //   };
-
-  //   runSplit();
-
-  //   // Cleanup on unmount
-  //   return () => {
-  //     if (typeSplit) typeSplit.revert();
-  //     ScrollTrigger.killAll();
-  //   };
-  // }, []);
-//  useEffect(() => {
-//     let typeSplit;
-
-//     // Split the text into words and lines
-//     const runSplit = () => {
-//       typeSplit = new SplitType(".split-word", {
-//         types: "lines, words",
-//       });
-
-//       const words = document.querySelectorAll(".word");
-//       words.forEach((word) => {
-//         const mask = document.createElement("div");
-//         mask.classList.add("line-mask");
-//         word.appendChild(mask);
-//       });
-
-//       createAnimation();
-//     };
-
-//     const createAnimation = () => {
-//       const allMasks = Array.from(document.querySelectorAll(".line-mask"));
-
-//       gsap.registerPlugin(ScrollTrigger);
-
-//       const tl = gsap.timeline({
-//         scrollTrigger: {
-//           trigger: ".split-word",
-//           start: "top center",
-//           end: "bottom center",
-//           scrub: 1,
-//         },
-//       });
-
-//       tl.to(allMasks, {
-//         // width: "0%",
-//         color : "white",
-//         duration: 1,
-//         stagger: 0.5,
-//       });
-//     };
-
-//     runSplit();
-
-//     // Cleanup on unmount
-//     return () => {
-//       if (typeSplit) typeSplit.revert();
-//       ScrollTrigger.killAll()
-//     };
-//   }, []);
-  const [center, setCenter] = useState({ lat: 6.453061, lng: 3.395833 }); //[, ]
+  
 
   const [anime, setAnime] = useState(false);
   return (
